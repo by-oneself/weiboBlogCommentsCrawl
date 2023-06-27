@@ -195,8 +195,8 @@ def main():
             create_blog_comment_table(connection)
 
         # 获取要爬取的数据
-        # weibos = fetch_data_from_mysql(connection)
-        weibos = [{'bid': 'N4bAAdZYq', 'user_id': '6136709296'}]
+        weibos = fetch_data_from_mysql(connection)
+        # weibos = [{'bid': 'N4bAAdZYq', 'user_id': '6136709296'}]
         print(weibos)
 
         # 使用线程池进行爬取
